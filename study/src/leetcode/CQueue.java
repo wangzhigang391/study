@@ -10,6 +10,10 @@ public class CQueue {
         B = new LinkedList<Integer>();
     }
 
+
+
+
+
     public void appendTail(int value) {
         A.addLast(value);
     }
