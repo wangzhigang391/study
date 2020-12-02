@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- CSRF -->
+    <meta name="_csrf" th:content="${_csrf.token}"/>
+    <!-- default header name is X-CSRF-TOKEN -->
+    <meta name="_csrf_header" th:content="${_csrf.headerName}"/>
+
+    <title>测试</title>
+</head>
+<body>
+
+<h1>测试CSRF</h1>
+
+<form method="post" th:action="@{/login}">
+    username: <input type="text" name="userName" />
+    <br />
+    password: <input type="password" name="password" />
+    <br />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
